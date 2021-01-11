@@ -23,7 +23,9 @@ public class UserController {
         User user = userService.get(uuid);
         if (uuid == 2) {
             throw new BusinessException("error",Code.GET_OK);
+
         }
+        System.out.println(123);
         return new Result(null != user ? Code.GET_OK : Code.GET_ERR , user);
     }
 
