@@ -26,6 +26,7 @@ public class UserController {
 
         }
         System.out.println(123);
+        System.out.println(222);
         return new Result(null != user ? Code.GET_OK : Code.GET_ERR , user);
     }
 
